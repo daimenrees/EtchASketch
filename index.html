@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/index.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <script src=
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+  </script>
+  </head>
+  <body>
+    <main>
+      <div class="intro">
+        <h2 class="hero">Etch-a-sketch</h2>
+        <h3 class="hero">The Odin Project Foundations</h3>
+      </div>
+        <div class="container">
+            <div class="main-controls">
+                <div>
+                    <input type="color" id="pen-color-picker" value="#000000">
+                </div>
+           
+                <div class="canvas-size">
+                    <input id="sliderValueSet" onchange="createGrid(value,value)" type="range" min="16" max="64" value="32 " class="canvas-slider">
+                </div>
+                <div><button class="button clear" onclick="clearGrid()">Clear</button></div>
+                <div><button class="button button--aylen" onclick="takeshot()">Save</button></div>
+            </div>
+            <div class="canvas" id="canvas">
+            </div>
+            <div>
+              <h2>Results gallery</h2>
+            </div>
+            <div id="output" class="output">
+
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

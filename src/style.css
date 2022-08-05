@@ -1,0 +1,90 @@
+body {
+    background-color: #e0e5ec;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: auto;
+}
+
+.container {
+    background-color: #e0e5ec;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.main-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: #e0e5ec;
+    padding: 10px 30px 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border: 0.2px solid black;
+}
+
+.canvas {
+    display: grid;
+    height: 600px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.pixel {
+    background-color: white;
+  }
+
+.button {
+    padding: 10px 20px 10px 20px;
+}
+
+.output {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 672px;
+    background-color: #e0e5ec;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.outputImage {
+    height: 100px;
+    width: 100px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Audiowide", sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}
+
+#pen-color-picker {
+    width: 100px;
+}
